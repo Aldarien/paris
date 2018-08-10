@@ -27,7 +27,7 @@ class ParisConfig
   }
   protected function set($data)
   {
-    switch ($data['engine']) {
+    switch ($data['driver']) {
       case 'mysql':
         $this->setMySQL($data);
         break;
