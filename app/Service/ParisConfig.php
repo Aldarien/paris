@@ -42,7 +42,7 @@ class ParisConfig
     if (isset($data['host']['port'])) {
       $dsn .= ';port=' . $data['host']['port'];
     }
-    $dsn .= ';dbname=' . $data['name'];
+    $dsn .= ';dbname=' . $data['name'] . ';charset=utf8';
     \ORM::configure($dsn);
     \ORM::configure('username', $data['user']['name']);
     \ORM::configure('password', $data['user']['password']);
